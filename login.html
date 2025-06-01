@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лазурний Квартал</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav id="nav-placeholder"></nav>
+    </header>
+
+    <main class="main-login">
+        <input type="checkbox" id="toggle-form" hidden>
+
+        <div class="form-container">
+
+            <div class="forms" autocomplete="off">
+                <div id="login-form" class="form">
+                    <h2>Вхід</h2>
+                    <form>
+                        <input type="text" placeholder="Email" id="login-email">
+                        <input type="password" placeholder="Пароль" id="login-password">
+                        <input type="submit" id="btn-login" value="Увійти">
+                    </form>
+                </div>
+
+                <div id="register-form" class="form">
+                    <h2>Реєстрація</h2>
+                    <form>
+                        <input type="text" placeholder="Ім'я" id="name">
+                        <input type="text" placeholder="Прізвище" id="surname">
+                        <input type="text" placeholder="Номер телефону" id="phone" autocomplete="tel" maxlength="13"
+                            value="+380" minlength="4">
+                        <input type="text" placeholder="Email" id="reg-email">
+                        <input type="password" placeholder="Пароль" id="reg-password">
+
+                        <input type="submit" id="btn-reg" value="Зареєструватись">
+                    </form>
+                </div>
+            </div>
+            <p id="error-msg"></p>
+            <div class="tabs">
+                <label for="toggle-form" id="login">Увійти</label>
+                <label for="toggle-form" id="register">Зареєструватися</label>
+                <div id="spinner-wrapper" style="display: none;">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer id="footer-placeholder"></footer>
+    
+    <script src="js/modules.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/login_script.js"></script>
+</body>
+
+</html>
